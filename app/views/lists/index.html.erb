@@ -1,0 +1,9 @@
+<h1>All lists</h1>
+<div id="lists">
+  <% @lists.each do |listitem| %>
+    <%= listitem.name %>
+    <p>
+      <%= link_to "Show this list", list_path(listitem.id) %>
+    </p>
+  <% end %>
+</div>
